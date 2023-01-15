@@ -33,3 +33,10 @@ const quizData = [
     correct: 'b',
   },
 ];
+const quizz = document.getElementById('quizz');
+const answerEls = document.querySelectorAll(.'answer');
+const questionEl =document.getElementById('question')
+const a_Text = document.getElementById('a_text')
+const b_Text = document.getElementById('b_text')
+const c_Text = document.getElementById('c_text')
+const d_Text = document.getElementById('d_text')
