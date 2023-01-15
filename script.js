@@ -1,15 +1,15 @@
-'use district';
-
+'use strict';
 const quizData = [
   {
-    Question: 'which language runs in the browser ?',
-    a: 'java',
-    b: 'c',
-    d: 'python',
+    question: 'Which language runs in a web browser?',
+    a: 'Java',
+    b: 'C',
+    c: 'Python',
+    d: 'JavaScript',
     correct: 'd',
   },
   {
-    Question: 'what does CSS stand for ?',
+    question: 'What does CSS stand for?',
     a: 'Central Style Sheets',
     b: 'Cascading Style Sheets',
     c: 'Cascading Simple Sheets',
@@ -33,10 +33,29 @@ const quizData = [
     correct: 'b',
   },
 ];
-const quizz = document.getElementById('quizz');
-const answerEls = document.querySelectorAll(.'answer');
-const questionEl =document.getElementById('question')
-const a_Text = document.getElementById('a_text')
-const b_Text = document.getElementById('b_text')
-const c_Text = document.getElementById('c_text')
-const d_Text = document.getElementById('d_text')
+
+const quiz = document.getElementById('quiz');
+const answerEls = document.querySelectorAll('.answer');
+const questionEl = document.getElementById('question');
+const a_text = document.getElementById('a_text');
+const b_text = document.getElementById('b_text');
+const c_text = document.getElementById('c_text');
+const d_text = document.getElementById('d_text');
+const submitBtn = document.getElementById('submit');
+
+let currentQuiz = 0;
+let score = 0;
+
+loadQuiz();
+
+function loadQuiz() {
+  // deselectAnswers();
+
+  const currentQuizData = quizData[currentQuiz];
+
+  questionEl.innerText = currentQuizData.question;
+  a_text.innerText = currentQuizData.a;
+  b_text.innerText = currentQuizData.b;
+  c_text.innerText = currentQuizData.c;
+  d_text.innerText = currentQuizData.d;
+}
