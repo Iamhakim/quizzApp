@@ -12,3 +12,10 @@ Result of user responses are presented in a single screen at the conclusion of t
 safari browser
 google chroom
 mozilla firefox
+
+## License
+
+Copyright 2022 Abdelhakim Boukerdoun
+
+Licensed under Abdelhakim License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
